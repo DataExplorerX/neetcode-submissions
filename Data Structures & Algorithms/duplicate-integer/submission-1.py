@@ -1,0 +1,14 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        # seen = {}
+        # for i in nums:
+        #     if i in seen:
+        #         return True
+        #     else:
+        #        seen[i] = 1
+        # return False
+
+        if len(nums) != len(set(nums)):
+            return True
+        return False
+        
